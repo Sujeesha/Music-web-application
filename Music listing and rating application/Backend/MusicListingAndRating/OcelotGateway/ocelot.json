@@ -1,0 +1,128 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7077"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/Authenticate/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Authenticate/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7276
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Authenticate/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Authenticate/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7276
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Authenticate/register-admin",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Authenticate/register-admin",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7276
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/Add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Song/Add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/update/{id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Song/update/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/delete/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Song/delete/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/get/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Song/get/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/search",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Song/search",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song/rate/{id}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Song/rate/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Song",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Song",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7220
+        }
+      ]
+    }
+  ]
+}
+
